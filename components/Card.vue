@@ -3,12 +3,12 @@
     <div class="card">
       <header class="card-header">
         <p class="card-header-title has-text-grey">
-          {{ title }}
+          {{ state.title }}
         </p>
       </header>
       <div class="card-content">
         <div class="content has-text-centered">
-          <b-icon :icon="icon" size="is-large" type="is-primary" />
+          <b-icon :icon="state.icon" size="is-large" type="is-primary" />
         </div>
       </div>
       <footer class="card-footer">
@@ -22,8 +22,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { computed, defineComponent, reactive } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   props: {
     title: {
       type: String,
@@ -34,5 +36,13 @@ export default {
       required: true,
     },
   },
-}
+  setup(props) {
+    const state = reactive({
+      title: computed(() => props.title),
+      icon: computed(() => props.icon),
+    })
+
+    return { state }
+  },
+})
 </script>
