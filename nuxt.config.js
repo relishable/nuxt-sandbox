@@ -71,7 +71,6 @@ export default {
    ** Storybook configuration
    */
   storybook: {
-    stories: ['../components/**/*.stories.ts'],
     addons: [
       '@storybook/addon-actions/register',
       '@storybook/addon-backgrounds/register',
