@@ -71,7 +71,6 @@ export default {
    ** Storybook configuration
    */
   storybook: {
-    port: 8080,
     stories: ['../components/**/*.stories.ts'],
     addons: [
       '@storybook/addon-actions/register',
