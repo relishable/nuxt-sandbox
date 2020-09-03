@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="columns">
-      <a href="/card">カード一覧へ</a>
+      <nuxt-link to="/card">カード一覧へ</nuxt-link>
     </div>
   </section>
 </template>

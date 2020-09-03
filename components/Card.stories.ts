@@ -23,12 +23,19 @@ export default {
         ],
       },
     },
+    content: {
+      name: 'content',
+      defaultValue: '<a href="https://github.com/relishable">github</a>',
+      control: {
+        type: 'text',
+      },
+    },
   },
 }
 
 export const Normal = (args: any, { argTypes }: { argTypes: any }) => ({
   components: { Card },
   template:
-    '<card :title="title" :icon="icon">Open source on <a href="https://github.com/buefy/buefy"> GitHub </a></card>',
+    '<card :title="title" :icon="icon" :content="content"></card>',
   props: Object.keys(argTypes),
 })

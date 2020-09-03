@@ -3,22 +3,22 @@
     {
       "title": "Free",
       "icon": "github",
-      "contents": "Open source on <a href=\"https://github.com/buefy/buefy\"> GitHub </a>"
+      "content": "Open source on <a href=\"https://github.com/buefy/buefy\"> GitHub </a>"
     },
     {
       "title": "Responsive",
       "icon": "cellphone-link",
-      "contents": "<b class=\"has-text-grey\"> Every </b> component is responsive"
+      "content": "<b class=\"has-text-grey\"> Every </b> component is responsive"
     },
     {
       "title": "Modern",
       "icon": "alert-decagram",
-      "contents": "Built with <a href=\"https://vuejs.org/\"> Vue.js </a> and\n<a href=\"http://bulma.io/\"> Bulma </a>"
+      "content": "Built with <a href=\"https://vuejs.org/\"> Vue.js </a> and\n<a href=\"http://bulma.io/\"> Bulma </a>"
     },
     {
       "title": "Lightweight",
       "icon": "arrange-bring-to-front",
-      "contents": "No other internal dependency"
+      "content": "No other internal dependency"
     }
   ]
 }
