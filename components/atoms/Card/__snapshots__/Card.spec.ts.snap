@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card initialized snapshot 1`] = `
+<div
+  class="column"
+>
+  <div
+    class="card"
+  >
+    <header
+      class="card-header"
+    >
+      <p
+        class="card-header-title has-text-grey"
+      >
+        
+        Test
+      
+      </p>
+    </header>
+     
+    <div
+      class="card-content"
+    >
+      <div
+        class="content has-text-centered"
+      >
+        <b-icon-stub
+          icon="github"
+          size="is-large"
+          type="is-primary"
+        />
+      </div>
+    </div>
+     
+    <footer
+      class="card-footer"
+    >
+      <div
+        class="card-footer-item"
+      >
+        <span>
+          <a
+            href="https://github.com/"
+          >
+            Github
+          </a>
+        </span>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

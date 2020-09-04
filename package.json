@@ -10,7 +10,9 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
-    "test": "jest"
+    "test": "jest --u",
+    "snapshot-test": "jest",
+    "hygen": "hygen component new"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -39,6 +41,7 @@
     "@nuxtjs/storybook": "^2.2.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@storybook/addon-essentials": "^6.0.21",
+    "@types/jest": "^26.0.13",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
@@ -49,6 +52,7 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
+    "hygen": "^6.0.4",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
