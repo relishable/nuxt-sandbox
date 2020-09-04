@@ -35,7 +35,6 @@ export default {
 
 export const Normal = (args: any, { argTypes }: { argTypes: any }) => ({
   components: { Card },
-  template:
-    '<card :title="title" :icon="icon" :content="content"></card>',
+  template: '<card :title="title" :icon="icon" :content="content"></card>',
   props: Object.keys(argTypes),
 })
