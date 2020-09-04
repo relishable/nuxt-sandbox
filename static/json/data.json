@@ -1,21 +1,29 @@
 {
   "cards": [
     {
+      "id": 1,
+      "group": "A",
       "title": "Free",
       "icon": "github",
       "content": "Open source on <a href=\"https://github.com/buefy/buefy\"> GitHub </a>"
     },
     {
+      "id": 2,
+      "group": "B",
       "title": "Responsive",
       "icon": "cellphone-link",
       "content": "<b class=\"has-text-grey\"> Every </b> component is responsive"
     },
     {
+      "id": 3,
+      "group": "A",
       "title": "Modern",
       "icon": "alert-decagram",
       "content": "Built with <a href=\"https://vuejs.org/\"> Vue.js </a> and\n<a href=\"http://bulma.io/\"> Bulma </a>"
     },
     {
+      "id": 4,
+      "group": "C",
       "title": "Lightweight",
       "icon": "arrange-bring-to-front",
       "content": "No other internal dependency"
