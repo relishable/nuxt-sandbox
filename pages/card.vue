@@ -80,7 +80,7 @@ import {
   useMeta,
 } from '@nuxtjs/composition-api'
 import Draggable from 'vuedraggable'
-import Card from '../components/Card.vue'
+import Card from '../components/atoms/Card/Card.vue'
 
 interface CardData {
   id: Number
