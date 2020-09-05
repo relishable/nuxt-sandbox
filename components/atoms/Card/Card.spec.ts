@@ -1,11 +1,19 @@
-import { Wrapper, shallowMount } from '@vue/test-utils'
+import { Wrapper, shallowMount, mount } from '@vue/test-utils'
 import Card from '~/components/atoms/Card/Card.vue'
 
 describe('Card', () => {
   let wrapper: Wrapper<any>
+  let shallowWrapper: Wrapper<any>
 
   beforeEach(() => {
-    wrapper = shallowMount(Card, {
+    wrapper = mount(Card, {
+      propsData: {
+        title: 'Test',
+        icon: 'github',
+        content: '<a href="https://github.com/">Github</a>',
+      },
+    })
+    shallowWrapper = shallowMount(Card, {
       propsData: {
         title: 'Test',
         icon: 'github',
@@ -16,7 +24,7 @@ describe('Card', () => {
 
   describe('initialized', () => {
     it('mountable', () => {
-      expect(wrapper.vm).toBeTruthy()
+      expect(shallowWrapper.vm).toBeTruthy()
     })
     it('snapshot', () => {
       expect(wrapper.element).toMatchSnapshot()
