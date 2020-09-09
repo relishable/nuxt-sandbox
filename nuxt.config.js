@@ -73,6 +73,8 @@ export default {
    ** Storybook configuration
    */
   storybook: {
+    logLevel: 'debug',
+    stories: ['../components/**/*.stories.@(ts|js)'],
     addons: [
       '@storybook/addon-actions/register',
       '@storybook/addon-backgrounds/register',
