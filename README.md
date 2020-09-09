@@ -2,6 +2,22 @@
 
 ## Build Setup
 
+### docker セットアップ
+```bash
+$ docker-compose build --no-cache
+```
+### docker 起動
+```bash
+$ docker-compose up -d
+```
+
+### frontend docker コンテナにはいる
+```bash
+$ docker exec -it nuxt_amplify bash
+```
+
+### docker コンテナ後
+
 ```bash
 # install dependencies
 $ npm install
